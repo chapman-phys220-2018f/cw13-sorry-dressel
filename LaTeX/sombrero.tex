@@ -1,0 +1,60 @@
+\documentclass[aps,pra,notitlepage,amsmath,amssymb,letterpaper,12pt]{revtex4-1}
+\usepackage{amsthm}
+\usepackage{graphicx}
+%  Above uses the Americal Physical Society template for Physical Review A
+%  as a reasonable and fully-featured default template
+ 
+%  Below define helpful commands to set up problem environments easily
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{solution}{\begin{proof}[Solution]}{\end{proof}}
+ 
+% --------------------------------------------------------------
+%                   Document Begins Here
+% --------------------------------------------------------------
+
+% In what follows, you can easily change text to see what happens to the document
+% For example, replacing the text "Document X" inside the "\title{}" command will
+% change the document title
+ 
+\begin{document}
+ 
+\title{About Classwork 12}
+\author{Amelia and Gwyneth}
+\affiliation{PHYS 220, Schmid College of Science and Technology, Chapman University}
+\date{\today}
+
+\maketitle
+
+\section{About} % Specify main sections this way
+
+% x.yz is the problem number
+\begin{Observations} 
+In this assignment we observed a ball of mass $m$ with the horizontal coordinates $x$ rolling into a potential of $V(x) = x^4/4 - x^2/2$ and this is known as sombrero. This produces the force $f_{\text{hat}}(x) = -V'(x) = -x^3 + x$ on the ball.  The ball will also experience a drag force $f_{\text{drag}}(\dot{x}) = -\nu \dot{x}$. These forces would make the ball stop at some point. 
+\end{problem}
+
+ 
+\begin{solution} In this assignment we used fourth order Runda Kutta for $m=1$, $\nu = 0.25$, and $\omega = 1$.
+\end{solution}
+
+\section{Analysis}
+Using the fourth order Runga Kutta method, we could plot the position of the ball verses its velocity. As the force increases, the graph gains more points. This observation is shown in the figures below. The first has a Force value of 0.18. The second has a force value of 0.4.
+
+\begin{figure}[h!] % h forces the figure to be placed here, in the text
+  \includegraphics[width=0.8\textwidth]{sombrero.png}  % if pdflatex is used, jpg, pdf, and png are permitted
+  \caption{Graphical representation of the sombrero potential with a Force value of 0.18.}
+  \label{fig:figlabel}
+\end{figure}
+
+\begin{figure}[h!] % h forces the figure to be placed here, in the text
+  \includegraphics[width=0.8\textwidth]{sombrero3.png}  % if pdflatex is used, jpg, pdf, and png are permitted
+  \caption{Graphical representation of the sombrero potential with a Force value of 0.4.}
+  \label{fig:figlabel}
+\end{figure}
+
+\section{Conclusions}
+
+From that we know that the fourth order Runga Kutta gives very accurate results in computing differential equations. The motion of the ball starts out a messy, but eventually calms and follows a pattern.
+
+ 
+\end{document}
